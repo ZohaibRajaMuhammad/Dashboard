@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sign Up Page -->
+    <div class="signup-container" id="signup-page">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Login Page -->
+    <div class="login-container" id="login-page" style="display: none;">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard-container" id="dashboard-page" style="display: none;">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#analytics">Analytics</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#logout" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="top-nav">
+                <h1>User Dashboard</h1>
+            </header>
+            <section class="user-info" id="user-info">
+                <!-- User details will be displayed here -->
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
